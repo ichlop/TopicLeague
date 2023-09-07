@@ -23,6 +23,9 @@ public class Athlete {
     @JoinColumn(name = "team_id")
     private Team team;
 
+    public Athlete() {
+    }
+
     public Athlete(String firstName, String lastName, Date dob, String email, Integer goal, Integer assist, Integer redCard) {
         this.firstName = firstName;
         this.lastName = lastName;

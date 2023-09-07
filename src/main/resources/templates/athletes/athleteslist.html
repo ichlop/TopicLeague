@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Athletes List</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>LastName</th>
+        <th>DOB</th>
+    </tr>
+    <tr th:each="athlete : ${athletes}">
+        <td th:text="${athlete.id}"></td>
+        <td th:text="${athlete.lastName}"></td>
+        <td th:text="${athlete.dob}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

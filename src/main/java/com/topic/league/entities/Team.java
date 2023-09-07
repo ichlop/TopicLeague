@@ -16,6 +16,9 @@ public class Team {
     @OneToMany(mappedBy = "team")
     Set<Athlete> teamMember = new HashSet<>();
 
+    public Team() {
+    }
+
     public Team(String name, String email) {
         this.name = name;
         this.email = email;
